@@ -34,7 +34,29 @@ Determine if a String is a pangram. A pangram is a string that contains every le
 
  e.g `"The quick brown fox jumps over the lazy dog"` is a pangram
  e.g `"The quick brown fox jumped over the lazy dog"` is NOT a pangram
+```
+var sentence = "the quick brown fox jumps over the lazy dog"
 
+var compSentence = Set<Character>()
+for a in sentence {
+if a == a {
+compSentence.insert(a)
+}
+}
+compSentence.remove(" ")
+
+print(compSentence.sorted())
+
+let alphabet: Set<Character> = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+//
+var intersect: Set<Character> = compSentence.symmetricDifference(alphabet)
+
+if intersect.count == 0 {
+print("its a pangram")
+} else {
+print("not pangram")
+}
+```
 
 ## Question 3
 
