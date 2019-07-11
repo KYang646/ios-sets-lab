@@ -13,6 +13,20 @@ Input: heights of trees below:
 Output:
 `169.375`
 
+```
+var greenDragon: [Int] = [161, 182, 161, 154, 176, 170, 167, 171, 170, 174]
+var sumDragon = Int()
+var doubleDragon = Double()
+var avArray = Int()
+
+for i in greenDragon {
+sumDragon += i
+}
+print(sumDragon)
+doubleDragon = Double(sumDragon) / Double(greenDragon.count)
+//avArray = sumDragon / greenDragon.count)
+print(doubleDragon)
+```
 
 ## Question 2
 
