@@ -77,6 +77,7 @@ You are given an array `nums` representing the data status of the set S after th
  Output: `[2,1]`
 
 
+
 ## Question 4
 
 Given the 4 arrays of Ints below, create a new array, sorted in ascending order, that contains all the values without duplicates.
@@ -86,6 +87,19 @@ let arr1 = [2, 4, 5, 6, 8, 10, 12]
 let arr2 = [1, 2, 3, 4, 5, 6]
 let arr3 = [5, 6, 7, 8, 9, 10, 11, 12]
 let arr4 = [1, 3, 4, 5, 6, 7, 9]
+```
+
+```
+var maxArray = [arr1, arr2, arr3, arr4]
+
+var helloSet: Set<Int> = []
+
+for i in maxArray {
+helloSet = Set(i).union(helloSet)
+}
+
+let newArray = Array(helloSet).sorted()
+print(newArray)
 ```
 
 
@@ -102,7 +116,12 @@ Perform the following set operations on the lists below:
 let list1: Set = [1, 3, 4, 6, 2, 7, 9]
 let list2: Set = [3, 7, 13, 10, 4]
 ```
-
+```
+print(list1.intersection(list2))
+print(list1.symmetricDifference(list2))
+print(list1.union(list2))
+print(list1.subtracting(list2))
+```
 
 ## Question 6
 
