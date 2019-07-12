@@ -146,6 +146,9 @@ print(spaceships.count)
 - 1
 - This code will compile but crash
 
+```This code will compile but crash
+```
+
 
 ## Question 7
 
@@ -172,3 +175,7 @@ if spaceships1.isSubset(of: spaceships2) {
 - This code will not compile
 - "This is a subset"
 - Nothing will be output
+
+```
+This codw will compile but crash
+```
